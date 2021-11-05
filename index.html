@@ -9,7 +9,7 @@
 <body>
     <h1>Colombo Life</h1>
 
-    <div x-data="{ open: false, message : 'This is the sample text' }">
+    <div x-data="{ open: false, message : '' }">
         <button @click="open = !open">Expand</button>
      
         <div x-show="open">
@@ -23,10 +23,10 @@
 
         <input type="text" x-model="message" />
  
-        <span x-text="message">
-
-
+        <h1 x-text="message"></h1>
     </div>
+
+    <input type="text" id="my-text" />
     
 </body>
 </html>
