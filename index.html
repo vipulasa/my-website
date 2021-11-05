@@ -4,26 +4,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colombo Life !!</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
     <h1>Colombo Life</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad dolore dolorem hic. 
-        Odio pariatur veniam, minus nobis reiciendis quisquam eius ad vel est dolorem, maxime perspiciatis 
-        architecto ipsum. Sapiente!
-    </p>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad dolore dolorem hic. 
-        Odio pariatur veniam, minus nobis reiciendis quisquam eius ad vel est dolorem, maxime perspiciatis 
-        architecto ipsum. Sapiente!
-    </p>
-
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad dolore dolorem hic. 
-        Odio pariatur veniam, minus nobis reiciendis quisquam eius ad vel est dolorem, maxime perspiciatis 
-        architecto ipsum. Sapiente!
-    </p>
+    <div x-data="{ open: false }">
+        <button @click="open = true">Expand</button>
+     
+        <div x-show="open">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad dolore dolorem hic. 
+                Odio pariatur veniam, minus nobis reiciendis quisquam eius ad vel est dolorem, maxime perspiciatis 
+                architecto ipsum. Sapiente!
+            </p>
+        
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad dolore dolorem hic. 
+                Odio pariatur veniam, minus nobis reiciendis quisquam eius ad vel est dolorem, maxime perspiciatis 
+                architecto ipsum. Sapiente!
+            </p>
+        
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad dolore dolorem hic. 
+                Odio pariatur veniam, minus nobis reiciendis quisquam eius ad vel est dolorem, maxime perspiciatis 
+                architecto ipsum. Sapiente!
+            </p>
+        </div>
+    </div>
+    
 </body>
 </html>
 
