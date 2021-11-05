@@ -9,8 +9,8 @@
 <body>
     <h1>Colombo Life</h1>
 
-    <div x-data="{ open: false }">
-        <button @click="open = true">Expand</button>
+    <div x-data="{ open: false, message : 'This is the sample text' }">
+        <button @click="open = !open">Expand</button>
      
         <div x-show="open">
             <p>
@@ -19,6 +19,13 @@
                 architecto ipsum. Sapiente!
             </p>    
         </div>
+
+
+        <input type="text" x-model="message" />
+ 
+        <span x-text="message">
+
+
     </div>
     
 </body>
